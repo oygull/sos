@@ -8,12 +8,13 @@
 }
 .btn-switch{
   position: absolute;
-  right: 60px;
+  right: 10px;
   top: 50%;
   transform: translate(-50%,0);
   background-color: transparent;
   cursor: pointer;
   border: none;
+  z-index: 100;
 }
 .battle_p{
   font-family: 'Bebas Neue';
@@ -59,7 +60,7 @@
   left: 50%;
   transform: translate(-50%,0);
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:1015px){
   .battle_p{
     font-size: 18px;
     line-height: 18px;
@@ -81,6 +82,14 @@
   }
   .battle__desc{
     padding-bottom: 50px;
+  }
+  .battle__img{
+    padding-left: 0;
+    padding-right: 20px;
+  }
+  .btn-switch{
+    right: 10px;
+    top: 60%;
   }
 }
 @media screen and (max-width:576px){

@@ -553,6 +553,13 @@ template {
   padding: 18px 16px;
 }
 
+.hero__btn span {
+  display: inline-block;
+  border-left: 0.642383px solid #1a1917d0;
+  padding-left: 8px;
+  margin-left: 3px;
+}
+
 .menu-btn {
   display: none;
 }
@@ -607,6 +614,10 @@ template {
   }
 }
 
+.hero__line {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .hero__title {
     font-size: 35px;
@@ -623,7 +634,7 @@ template {
     position: absolute;
     top: 10%;
     left: 60%;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.863);
     border-radius: 20px;
     height: 0;
     overflow: hidden;
@@ -673,6 +684,15 @@ template {
     position: absolute;
     right: 60px;
   }
+  .slide-down {
+    left: 25%;
+  }
+  .hero__line {
+    display: block;
+    position: absolute;
+    bottom: 115px;
+    right: 10%;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -681,13 +701,16 @@ template {
     line-height: 33px;
   }
   .hero__btn {
-    padding: 6px 12px;
+    padding: 12px 6px;
     font-weight: bold;
     font-size: 14px;
     line-height: 19px;
   }
   .nav__link {
     font-size: 10px;
+  }
+  .hero__text {
+    padding: 0 30px;
   }
 }
 
@@ -710,13 +733,14 @@ template {
 
 .btn-switch {
   position: absolute;
-  right: 60px;
+  right: 10px;
   top: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   background-color: transparent;
   cursor: pointer;
   border: none;
+  z-index: 100;
 }
 
 .battle_p {
@@ -771,7 +795,7 @@ template {
           transform: translate(-50%, 0);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1015px) {
   .battle_p {
     font-size: 18px;
     line-height: 18px;
@@ -793,6 +817,14 @@ template {
   }
   .battle__desc {
     padding-bottom: 50px;
+  }
+  .battle__img {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+  .btn-switch {
+    right: 10px;
+    top: 60%;
   }
 }
 

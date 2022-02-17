@@ -118,6 +118,12 @@
 }
 .hero__btn{
   padding: 18px 16px;
+  span{
+    display: inline-block;
+    border-left: 0.642383px solid #1a1917d0;
+    padding-left: 8px;
+    margin-left: 3px;
+  }
 }
 .menu-btn{
   display: none;
@@ -153,6 +159,9 @@
     transform: translateY(12px);
   }
 }
+.hero__line{
+  display: none;
+}
 
 @media screen and (max-width:768px){
   .hero__title{
@@ -170,7 +179,7 @@
     position: absolute;
     top: 10%;
     left: 60%;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.863);
     border-radius: 20px;
     height: 0;
     overflow: hidden;
@@ -210,6 +219,15 @@
     position: absolute;
     right: 60px;
   }
+  .slide-down{
+    left: 25%;
+  }
+  .hero__line{
+    display: block;
+    position: absolute;
+    bottom: 115px;
+    right: 10%;
+  }
 }
 @media screen and (max-width:576px) {
   .hero__title{
@@ -217,12 +235,15 @@
     line-height: 33px;
   }
   .hero__btn{
-    padding: 6px 12px;
+    padding: 12px 6px;
     font-weight: bold;
     font-size: 14px;
     line-height: 19px;
   }
   .nav__link{
     font-size: 10px;
+  }
+  .hero__text{
+    padding: 0 30px;
   }
 }
