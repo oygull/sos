@@ -1,0 +1,17 @@
+.btn{
+  background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: #1A1917;
+  transition: all 0.4s ease;
+  border: none;
+
+  &:hover{
+    opacity: 0.8;
+  }
+}

@@ -9,5 +9,17 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: rgb(133, 128, 128);
+  font-family: 'Open Sans', sans-serif;
+}
+ul{
+  list-style: none;
+}
+img{
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4{
+  font-family: 'Bebas Neue', cursive;
 }
