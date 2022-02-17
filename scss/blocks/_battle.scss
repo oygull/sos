@@ -1,0 +1,98 @@
+.battle{
+  width: 100%;
+  background-image: url('../../images/battle-bg.jpg');
+  position: relative;
+  @include flex-center();
+  padding: 100px 0;
+  color: $white-color;
+}
+.btn-switch{
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translate(-50%,0);
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+.battle_p{
+  font-family: 'Bebas Neue';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 9px;
+}
+.battle__title{
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.battle__line{
+  width: 700px;
+  height: 3px;
+  background-color: $white-color;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 10;
+}
+.battle__imgbox {
+  padding-left: 40px;
+  position: relative;
+}
+.battle__img{
+  position: relative;
+  z-index: 1;
+}
+.battle__text{
+  font-size: 18px;
+  line-height: 22px;
+  padding-left: 200px;
+}
+.img-line{
+  position: absolute;
+  bottom: 50px;
+  z-index: 30;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+@media screen and (max-width:768px){
+  .battle_p{
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+  .battle__title{
+    font-size: 35px;
+    line-height: 35px;
+    letter-spacing: 3px;
+    padding-right: 40px;
+  }
+  .battle__text{
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 150px;
+  }
+  .battle__line{
+    width: 400px;
+  }
+  .battle__desc{
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width:576px){
+  .battle__line{
+    width: 300px;
+  }
+  .battle__title{
+    font-size: 33px;
+    line-height: 33px;
+    letter-spacing: 3px;
+  }
+  .battle__text{
+    padding-left: 100px;
+  }
+}
