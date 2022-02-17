@@ -629,6 +629,7 @@ template {
     overflow: hidden;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
+    z-index: 1000;
   }
   .show {
     height: 180px;
