@@ -840,5 +840,9 @@ template {
   .battle__text {
     padding-left: 100px;
   }
+  .btn-switch {
+    right: 10px;
+    top: 65%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
